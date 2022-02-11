@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <!-- <script>
+
+
+
+        const getVerifiedNumber = function(number){
+            if(number < 0){
+                alert(" вы ввели отрицательное число");
+            } else if (number > 0){
+                alert("вы ввели положительное число");
+            } else if (number == 0){
+                alert("вы ввели сифру ноль");
+            } else if ( number === null){
+                alert ("вы нажали отмену");
+            } else if(isNaN(number)){
+                alert("вы ввели не число");
+            }
+        }
+        const ansver = getVerifiedNumber(prompt("введите число"))
+ </script> -->
+                <!-- <script>
+
+                    const numbers = [];
+
+                    while(true){
+                        const userNumbers = prompt("Введите число");
+
+                        if(userNumbers === null){
+                            break;
+                        } else if(userNumbers < 0 || userNumbers > 100){
+                            continue;
+                        } else if(isNaN(userNumbers)){
+                            alert("Вы ввели не число");
+                        }                         
+                            numbers.push(userNumbers);
+                    } 
+                    console.log(numbers);
+                
+                    
+                </script> -->
+                <!-- <script>
+                    let number = [1, 2,4, 10, 15, "abc  ",  20];
+                    let nume = [] ;
+                    for(let i = 0; i < number.length; i++){
+                        if(number[i] % 2 ==0){
+                            console.log('четный');
+                            nume.push(number[i]);
+                        }else{
+                            console.log("не тачетнный");
+                        }
+                        if(isNaN(number[i])){
+                            console.log("не число");
+                        }
+                    }
+                    console.log(nume);
+                </script> -->
+
+                <!-- <script>
+
+             let numbers = [];
+             let evenNumber = [];
+             let noEvenNumber = [];
+            while(true){
+                const userNumbers = prompt('Введите число');
+                const number = parseInt (userNumbers)
+               
+                    for( let i = 0 ; i < numbers.length; i++){
+                        if ( numbers [i] % 2 == 0){
+                            evenNumber.push(numbers[i]);
+                        }else{
+                            noEvenNumber.push(numbers[i]);
+                        }
+                    }if (isNaN (userNumbers) || userNumbers === "" ) {
+                        continue
+                    }
+                    if(userNumbers === null){
+                    break;
+                }
+                numbers.push(number);
+            }
+            console.log(numbers);
+            console.log(evenNumber);
+            console.log(noEvenNumber);
+
+                </script> -->
+         <script>
+             const numbers = [];
+             let num = [];
+                const getEvenNumbers = function(value){
+            for(let i = 0; i < value.length; i++){
+                if(value[i] % 2 == 0){
+                console.log('четные');
+                num.push(value[i]);
+                }else{
+                console.log('не четные');
+                }
+            }
+        }
+                    while(true){
+                        const userNumber = prompt('введите число');
+                        const nummm = parseInt(userNumber);
+                        if(userNumber === null){
+                            break;
+                        }else if(isNaN(userNumber)){
+                            continue;
+                        }
+                        numbers.push(nummm);
+                    }
+                    getEvenNumbers(numbers);
+                    console.log(numbers);
+                    console.log(num);
+         </script>
+
+
+
+
+
+
+</body>
+</html>
